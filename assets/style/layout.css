@@ -1,0 +1,603 @@
+/*
+    ===========================================================================
+    HORSEGGS: DOCS: CSS
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900|Roboto+Slab:100,300,400,700");
+/*
+    ---------------------------------------------------------------------------
+    Horseggs: Required classes
+    ---------------------------------------------------------------------------
+*/
+/*
+    ===========================================================================
+    HORSEGGS: SETTINGS
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Settings
+------------------------------------------------------------------------ */
+/* Media Queries
+------------------------------------------------------------------------ */
+/* Colors
+------------------------------------------------------------------------ */
+/*
+    ===========================================================================
+    HORSEGGS: MIXINS
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Import
+------------------------------------------------------------------------ */
+/*
+    ===========================================================================
+    HORSEGGS: MIXINS: COMMON
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Clearfix: For clearing floats like a boss
+------------------------------------------------------------------------ */
+/* Box-sizing
+------------------------------------------------------------------------ */
+/* Transition
+------------------------------------------------------------------------ */
+/* FUNCTIONS
+------------------------------------------------------------------------ */
+/* Min-Height: Cross-plataform function that works on IE
+------------------------------------------------------------------------ */
+/*
+    ===========================================================================
+    HORSEGGS: MIXINS: TYPO
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Bulletproof font-face technique by Paul Irish (http://is.gd/sPTEJj)
+------------------------------------------------------------------------ */
+/* Make readability consistent and delightful
+------------------------------------------------------------------------ */
+/* Image replacement for background-image
+------------------------------------------------------------------------ */
+/* Our font-family for coding
+------------------------------------------------------------------------ */
+/* Smooth font rendering
+------------------------------------------------------------------------ */
+/*
+    ===========================================================================
+    HORSEGGS: MIXINS: SHADOW
+    Values for @shadow: horizontal, vertical, blur, color;
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/*
+    ===========================================================================
+    HORSEGGS: MIXINS: GEOMETRY
+    Build custom shapes with just CSS
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/*
+    ===========================================================================
+    HORSEGGS: MIXINS: STRIPES
+    Be careful on setting the size of it
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Stripes
+------------------------------------------------------------------------ */
+/* Animation
+------------------------------------------------------------------------ */
+/*
+    ===========================================================================
+    HORSEGGS: MIXINS: BUTTON
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Beautiful flat button
+------------------------------------------------------------------------ */
+/*
+    ===========================================================================
+    HORSEGGS: ICON: BASE
+    Must be included before all other icon classes
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Default icon
+------------------------------------------------------------------------ */
+/*
+    ===========================================================================
+    HORSEGGS: ICON: SETTINGS
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Glyphs
+------------------------------------------------------------------------ */
+/* Social Media and Service variables
+------------------------------------------------------------------------ */
+/* Creative Commons variables
+------------------------------------------------------------------------ */
+/* Whether colors
+------------------------------------------------------------------------ */
+/* Whether variables
+------------------------------------------------------------------------ */
+/*
+    ===========================================================================
+    HORSEGGS: ALERT, LABEL & BADGE: MIXINS
+    Must be included before all other classes
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/*
+    ===========================================================================
+    HORSEGGS: MIXINS: COMMON
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Tooltip Color
+------------------------------------------------------------------------ */
+/* Fallback import for IE 8
+------------------------------------------------------------------------ */
+/*
+    ===========================================================================
+    HORSEGGS: MIXINS: RGBA FALLBACK
+    ---------------------------------------------------------------------------
+    Version: 0.1;
+    ===========================================================================
+*/
+/* Gives transparent color for modern browsers and solid for IE8 or less
+------------------------------------------------------------------------ */
+@font-face {
+  font-family: "entypo";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../typo/entypo/entypo.eot?#iefix") format("embedded-opentype"), url("../typo/entypo/entypo.ttf") format("truetype"), url("../typo/entypo/entypo.woff") format("woff"), url("../typo/entypo/entypo.svg#@{name}") format("svg");
+}
+
+#DEFAULT-ICON, .item-anchors .top a:after,
+.item-anchors .ON:after,
+#submenu .top a:after,
+#submenu .ON:after {
+  font-family: "entypo";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  speak: none;
+  text-transform: none;
+}
+
+/*
+    ---------------------------------------------------------------------------
+    Layout: Code start
+    ---------------------------------------------------------------------------
+*/
+#DEFAULT-ANIMATION, .content-floating-menu .top {
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+
+body {
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, .highlight-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 2.4rem 0 0;
+}
+h1 span {
+  background-color: white;
+  padding: 4.8rem 4.8rem 0.6rem;
+}
+
+h2 {
+  margin-bottom: 4.8rem;
+}
+
+h2, h3 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 4.5rem;
+  margin: 2.4rem 0;
+}
+
+.button, .video-player, img {
+  margin-bottom: 2.4rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+  line-height: 7.2rem;
+}
+
+.highlight-text {
+  display: block;
+  font-weight: 400;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.8rem;
+  padding-bottom: 0.6rem;
+  text-align: center;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+article, .content-nav {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+}
+
+.content-nav a {
+  text-decoration: none;
+}
+
+.has-tip {
+  text-decoration: underline;
+}
+
+.content-floating-menu .top {
+  -webkit-opacity: 0;
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+
+.content-floating-menu.float {
+  position: fixed !important;
+  top: 4.8rem;
+}
+.content-floating-menu.float .top {
+  -webkit-opacity: 1;
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+
+header {
+  background-color: white;
+  min-height: 80px;
+}
+header ul li {
+  display: block;
+  float: right;
+  padding-left: 3rem;
+  line-height: 7.5rem;
+}
+header a {
+  text-decoration: none;
+}
+header .icon.social {
+  line-height: 7rem;
+  display: block;
+  float: right;
+  padding-left: .5rem;
+  font-size: 2.4rem;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo a {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 8rem;
+  text-transform: uppercase;
+}
+
+#error h1 {
+  color: #dedede;
+  font-size: 12rem;
+  line-height: 20rem;
+}
+
+#main-menu,
+#content-intro {
+  background-color: #f7eb17;
+}
+
+#main-menu {
+  padding: 1.2rem 0 2.4rem;
+}
+#main-menu a {
+  text-decoration: none;
+}
+#main-menu .title {
+  display: block;
+  text-align: center;
+}
+
+#content-intro {
+  color: #45453A;
+  padding-bottom: 4.8rem;
+}
+
+.item-anchors a,
+#submenu a {
+  border-left: solid .4rem transparent;
+  display: block;
+  background-color: #f5f5f5;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  margin-bottom: 1px;
+  padding: .4rem .8rem;
+}
+.item-anchors .top a:after,
+.item-anchors .ON:after,
+#submenu .top a:after,
+#submenu .ON:after {
+  float: right;
+  font-size: 1.4rem;
+  padding-top: .5rem;
+}
+.item-anchors .top a:after,
+#submenu .top a:after {
+  color: gray;
+  content: "\e0d3";
+}
+.item-anchors .ON:after,
+#submenu .ON:after {
+  content: "\e0d4";
+}
+.item-anchors .active > a,
+#submenu .active > a {
+  content: "\e0d2";
+}
+
+#submenu a {
+  background-color: #f5f5f5;
+}
+#submenu .active a,
+#submenu .top a {
+  border-left: solid .4rem #dedede;
+}
+#submenu .active > a {
+  background-color: #f7eb17;
+}
+#submenu .active > a,
+#submenu .active a.ON {
+  border-left: solid 0.4rem #f7eb17;
+}
+
+.single .active a,
+.single .top a {
+  border-left: solid .4rem #dedede;
+}
+.single .ON {
+  background-color: #f7eb17;
+}
+
+.label.mixin {
+  background-color: #f7eb17;
+  float: right;
+  line-height: 5rem;
+  padding: 0 1rem;
+  margin: 1rem 0 0;
+}
+
+code.prettyprint {
+  background-color: transparent;
+}
+
+.prototype.row {
+  padding: 0 !important;
+}
+.prototype .col {
+  font-size: 0.75rem;
+  line-height: 2.4rem;
+  -webkit-transition: all 0.25s ease-out 0s;
+  -moz-transition: all 0.25s ease-out 0s;
+  -ms-transition: all 0.25s ease-out 0s;
+  transition: all 0.25s ease-out 0s;
+  -webkit-box-shadow: inset 0 0 0 1px white;
+  -moz-box-shadow: inset 0 0 0 1px white;
+  box-shadow: inset 0 0 0 1px white;
+  background-color: #ededed;
+  cursor: default;
+  font-weight: bold;
+  position: relative;
+}
+.prototype .col:hover {
+  background-color: #dedede;
+}
+.prototype .col .col {
+  margin-top: 1px;
+  outline: solid 1px white;
+}
+
+.highlight-text {
+  text-transform: uppercase;
+}
+
+#icon-glyphs .glyph {
+  background-color: #f6f6f6;
+  background-color: rgba(0, 0, 0, 0.035);
+  margin-bottom: 2.4rem;
+  padding: 1.2rem 0;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#icon-glyphs .glyph .is-tip {
+  background-color: #404040;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 1.2rem;
+}
+#icon-glyphs .icon {
+  font-size: 4.2rem;
+  line-height: 7.2rem;
+}
+#icon-glyphs .icon {
+  text-align: center;
+}
+#icon-glyphs .icon.whether {
+  font-size: 7.2rem;
+}
+#icon-glyphs input, #icon-glyphs textarea {
+  border-left-width: 1px;
+  margin: 1.4rem -3% 1.4rem;
+  outline: none;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+  width: 106%;
+}
+
+.arrows td {
+  padding: 0;
+}
+.arrows .icon-font {
+  display: block;
+  position: absolute;
+  font-size: 2.4rem;
+  left: 0.7rem;
+}
+.arrows a {
+  border: solid 1px;
+  border-color: #dfdfdf;
+  border-color: rgba(0, 0, 0, 0.125);
+  display: block;
+  height: 2.4rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 2.4rem;
+}
+.arrows a.ON {
+  color: red;
+}
+.arrows a.ON span {
+  text-shadow: 0 0 4px rgba(255, 0, 0, 0.25);
+}
+.arrows a#top-left span, .arrows a#top-right span, .arrows a#bottom-left span, .arrows a#bottom-right span {
+  left: 0.35rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0.35rem;
+}
+.arrows a#top-left {
+  -webkit-border-radius: 6px 0 0 0;
+  -moz-border-radius: 6px 0 0 0;
+  border-radius: 6px 0 0 0;
+}
+.arrows a#top-left span {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.arrows a#top-right {
+  -webkit-border-radius: 0 6px 0 0;
+  -moz-border-radius: 0 6px 0 0;
+  border-radius: 0 6px 0 0;
+}
+.arrows a#top-right span {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.arrows a#bottom-left {
+  -webkit-border-radius: 0 0 0 6px;
+  -moz-border-radius: 0 0 0 6px;
+  border-radius: 0 0 0 6px;
+}
+.arrows a#bottom-left span {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.arrows a#bottom-right {
+  -webkit-border-radius: 0 0 6px 0;
+  -moz-border-radius: 0 0 6px 0;
+  border-radius: 0 0 6px 0;
+}
+.arrows a#bottom-right span {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.arrows a#top, .arrows a#bottom {
+  border-left: 0;
+  border-right: 0;
+}
+.arrows a#left {
+  border-right: 0;
+}
+.arrows a#left span {
+  padding-left: 0.175rem;
+}
+.arrows a#right {
+  border-left: 0;
+}
+.arrows a#right span {
+  padding-left: 0.2333rem;
+}
+.arrows tr.top a {
+  border-bottom: 0;
+}
+.arrows tr.bottom a {
+  border-top: 0;
+}
+
+.tab-content {
+  padding-bottom: 2.4rem;
+}
+
+#script-lazy textarea {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  overflow: hidden;
+}
+#script-lazy textarea span {
+  color: red;
+}
+#script-lazy .suggestions {
+  display: none;
+}
+
+.highlighted-query {
+  background-color: #f7eb17;
+  border: solid 1px white;
+  height: 2.4rem;
+  left: 0;
+  position: absolute;
+  padding: 0 1rem;
+  top: 0;
+  width: 100%;
+}
